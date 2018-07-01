@@ -1,0 +1,66 @@
+<view class='search_title'>
+
+  <view class='search_content'>
+    <view class="search_section">
+      <icon class="searchcion" size='20' type='search'></icon>
+      <input type="digit" placeholder="找影视剧，影院" value="{{inputTxt}}" bindinput="bindKeyInput" focus='true' confirm-type='search' bindblur='clickblur' type='text' />
+    </view>
+    <text bindtap='search_cancel' class='search_can'>取消</text>
+  </view>
+</view>
+<!--搜索出来的东西  -->
+<view wx:if='{{isok &&isok1}}' class='search_nocontent'>没有你搜索的内容</view>
+
+<view wx:if='{{isok}}' class='search_nocontent'>没有对应电影院</view>
+ <view wx:if='{{isok1}}' class='search_nocontent'>没有相关电影</view> 
+<!--搜索相关影院  -->
+ <view class='seach_dianshi' wx:if='{{upcinema}}'>院</view> 
+<view wx:for='{{cinema}}' wx:key='{{index}}' class='search_wanda' bindtap='clickcinema' data-id='{{item}}'>
+  <view class='cinma_dd'>
+    <view class='cinma_name'>
+      {{item.name}}
+      <view class='cinma_price'>31
+        <view class='cinma_yuan'>元起</view>
+      </view>
+
+    </view>
+    <view class='cinma_address'>{{item.address}}江东路360号(近成温江立交桥)</view>
+    <view class='cinma_fea'>
+      <view wx:for='{{item.special}}' wx:key='{{index}}' class='search_features'>
+        <view class='searh_bk' wx:if='{{item=="小吃"||item=="折扣价"}}'>
+          {{item}}
+        </view>
+        <view class='searh_bk1' wx:if='{{item=="IMAX厅"||item=="座"||item=="改签"||item=="杜比全景声厅"}}'>
+          {{item}}
+        </view>
+
+      </view>
+
+    </view>
+
+  </view>
+  <view class='search_distance'>
+  1.2Km
+  </view>
+
+
+</view>
+<!--搜索相关电影  -->
+<view class='seach_dianshi' wx:if='{{up}}'>电影/电视剧</view>
+<view wx:for='{{listmovies}}' wx:key='{{index}}' class='search_mov' bindtap="indexTap" data-id='{{item._id}}'>
+  <view>
+    <image src='{{Ips+item.movie_img}}'></image>
+  </view>
+  <view class='search_movies'>
+    <view class='search_moviename'>{{item.movie_name}}</view>
+    <view class='search_en'>{{item.en_name}}</view>
+    <view class='search_en'>{{item.movie_type}}</view>
+    <view class='search_en'>{{item.movie_uptime}}大陆上映</view>
+  </view>
+  <view class='search_person'>
+    {{item.like}}人想看
+    <button class='search_but'>想看</button>
+  </view>
+
+
+</view>

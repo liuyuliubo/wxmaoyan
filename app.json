@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/main/main",
+    "pages/movies_details/movies_details",
+    "pages/search/search",
+    "pages/conema_time/conema_time",
+    "pages/video/video",
+    "pages/ticket/ticket",
+    "pages/seat/seat",
+    "pages/pay/pay",
+    "pages/search_conema/search_conema",
+    "pages/want_see/want_see",
+    "pages/login/login",
+    "pages/mylist/mylist"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f00",
+    "navigationBarTitleText": "猫眼电影",
+    "navigationBarTextStyle": "witle"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "red",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "pages/images/电影1.png",
+        "iconPath": "pages/images/电影.png",
+        "pagePath": "pages/index/index",
+        "text": "电影"
+      },
+      {
+        "selectedIconPath": "pages/images/影院.png",
+        "iconPath": "pages/images/影院1.png",
+        "pagePath": "pages/logs/logs",
+        "text": "影院"
+      },
+      {
+        "selectedIconPath": "pages/images/我的1.png",
+        "iconPath": "pages/images/我的.png",
+        "pagePath": "pages/main/main",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

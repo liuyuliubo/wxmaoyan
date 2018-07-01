@@ -1,0 +1,112 @@
+.search_title {
+    height: 80rpx;
+  padding-top: 15rpx;
+  background: rgb(245, 245, 248);
+}
+
+.search_content {
+  width: 96%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: gray;
+}
+
+.cinma_fea {
+  display: flex;
+}
+
+.search_section {
+  background: white;
+  width: 90%;
+  border: 1rpx solid gainsboro;
+  border-radius: 10rpx;
+}
+
+.search_section input {
+  height: 60rpx;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.searchcion {
+  margin: 10rpx 10rpx 10rpx 25rpx;
+  position: absolute;
+  left: 300rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+/*电影院  */
+
+.logns_conema {
+  width: 90%;
+  margin: 25rpx auto;
+  padding-bottom: 35rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid gainsboro;
+}
+.cinema_distance {
+  color: gray;
+  font-size: 26rpx;
+  margin-right: 15rpx;
+  line-height: 120rpx;
+}
+
+.search_features {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 20rpx;
+  margin-right: 10rpx;
+}
+
+.searh_bk {
+  border: 1rpx solid gold;
+  vertical-align: baseline;
+  color: gold;
+}
+
+.searh_bk1 {
+  border: 1rpx solid lightblue;
+  color: lightblue;
+  vertical-align: baseline;
+}
+
+/* .cinma_dd {
+  padding: 25rpx;
+} */
+
+.cinma_name {
+  font-size: 30rpx;
+  display: flex;
+  margin-bottom: 15rpx;
+}
+
+.cinma_address {
+  font-size: 24rpx;
+  color: gray;
+}
+
+.cinma_price {
+  display: flex;
+  color: red;
+}
+
+.cinma_price {
+  margin-left: 10rpx;
+}
+
+.cinma_yuan {
+  font-size: 20rpx;
+  padding-top: 8rpx;
+}
+
+.cinma_address {
+  margin-bottom: 15rpx;
+}

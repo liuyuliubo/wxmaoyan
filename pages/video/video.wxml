@@ -1,0 +1,40 @@
+<video src='{{Ips+lmovie.video}}' show-play-btn bindtap='videoclick' controls class='video_controls'     bindpause='{{bindpause}}'
+ autoplay>
+<!--播放前显示在视频上面的图片  -->
+  <!-- <cover-view class="controls">
+    <cover-image class="img" src="{{Ips+lmovie.video_img}}" wx:if='{{isok}}' />
+  </cover-view> -->
+</video>
+<view class='video_man'>
+  <view>
+    <view class='video_moviename'>{{listvideo.movie_name}}</view>
+    <view class='video_soc'>
+      <view> 猫眼评分</view>
+      <view class='video_movie_soc'>{{listvideo.movie_soc}}</view>
+    </view>
+    <view>{{listvideo.movie_uptime}}大陆上映</view>
+  </view>
+  <view>
+    <button class='video_but' bindtap='clickbut' data-id='{{listvideo._id}}'>特惠购票</button>
+  </view>
+</view>
+<view class='video_kb'></view>
+<view class='video_listcon'>播放列表 ({{listvideo.video.length}})</view>
+
+
+<view wx:for='{{listvideo.video}}' class='video_yg' wx:key='{{index}}' bindtap='click_vdo' data-index='{{index}}' >
+
+  <view class='video_ding'>
+    <image src='../images/bftu.png' class='video_min'></image>
+    <image src='{{Ips+item.video_img}}' bindtap='videoclick'></image>
+  </view>
+  <view class='video_voffice'>
+    <view>{{item.video_name}}</view>
+    <view class='index_guan'>
+      <image src='../images/cishu.png'></image>
+      <view>{{item.video_office}}万</view>
+    </view>
+
+  </view>
+
+</view>

@@ -1,0 +1,140 @@
+.seat_title {
+  width: 90%;
+  margin: auto;
+  border-bottom: 1rpx solid gainsboro;
+}
+.seat_day{
+  margin-top: 15rpx;
+  color: gray;
+  font-size: 26rpx;
+  
+}
+.seat_zuowei {
+  display: flex;
+  justify-content: center;
+  padding: 20rpx 0rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+
+.seat_zuowei image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.seat_pm image {
+  height: 50rpx;
+  width: 500rpx;
+}
+
+.seat_pm {
+  text-align: center;
+}
+
+.seat_deta {
+  position: relative;
+}
+
+.seat_name {
+  position: absolute;
+  left: 330rpx;
+  top: 5rpx;
+}
+
+.seat_yingmu {
+  width: 150rpx;
+  color: gray;
+  font-size: 30rpx;
+  background: gainsboro;
+  margin: auto;
+  margin-top: 80rpx;
+}
+
+.seat_maxting {
+  height: 700rpx;
+  overflow: scroll;
+  margin-bottom: 350rpx;
+  background: whitesmoke;
+}
+
+/*板凳  */
+
+.chairimg {
+  display: flex;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.chairimg image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.seat_chair {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.chair_img {
+  margin-left: 5rpx;
+}
+
+/*推荐座位  */
+
+.seat_footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  border-top: 1rpx solid black;
+}
+.btntuijian {
+  margin-top: 35rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+
+.btntuijian, .footer {
+  width: 90%;
+  margin: 25rpx auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seat_butyx {
+  font-size: 30rpx;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.seat_butyx text {
+  margin-right: 15rpx;
+  width: 150rpx;
+  border: 1rpx solid black;
+}
+
+.seat_one {
+  margin-top: 25rpx;
+  font-size: 26rpx;
+  color: gray;
+}
+
+.selectchair {
+  color: white;
+  background: gold;
+}
+
+.selectchair1 {
+  color: white;
+  background: orange
+}
+
+.paymes {
+  font-size: 26rpx;
+}
+
+.paymes1 {
+  color: red;
+  font-size: 45rpx;
+}

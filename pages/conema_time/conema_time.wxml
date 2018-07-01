@@ -1,0 +1,123 @@
+<view class='contime_title'>
+  <view>
+    <view class='contime_name'>{{conema.name}}</view>
+    <view class='contime_address'>{{conema.address}}</view>
+  </view>
+  <view class='contime_images'>
+     <image src='../images/ditu.png'></image> 
+    <view class='contime_ditu'>地图</view>
+  </view>
+</view>
+ <view class='time_img'> 
+  <image src='{{Ips+moviesarr[index].movies[0].movie_img}}'></image>
+  <image src='../images/sanjiao.png'></image>
+ </view> 
+<!--图片滑动  -->
+<swiper previous-margin="300rpx" next-margin="300rpx" bindchange="durationChange">
+  <view class='time_img1'>
+    <view wx:for='{{moviesarr}}' wx:key='{{index}}' data-index='{{index}}' bindtap='clickimg' class='{{num==index?"bigimg":"conmaindex_img"}}'>
+      <swiper-item>
+        <image src='{{Ips+item.movies[0].movie_img}}'></image>
+      </swiper-item>
+
+    </view>
+  </view>
+</swiper>
+
+
+<view class='time_moviename'>
+  <view class='time_soc'>
+    {{moviesarr[index].movies[0].movie_name}}
+    <text class='time_moviesoc'> {{moviesarr[index].movies[0].movie_soc}}分</text>
+  </view>
+  <view class='time_director'>
+    {{moviesarr[index].movies[0].movie_time}}分钟| {{moviesarr[index].movies[0].movie_type}}| {{moviesarr[index].movies[0].director.name}}
+  </view>
+
+</view>
+
+<view class='time_zhekou'>
+
+  <view class='time_kaika'>
+    <view class='time_goupiao'>
+      <view class='time_goupiaoka'> 折扣卡</view>
+      <view> 购票享低价，首单2张立减14元</view>
+
+    </view>
+    <view class='time_kaika1'>限时27元开卡 ></view>
+  </view>
+</view>
+
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+<view hidden="{{currentTab!==0}}" class='time_ting' bindtap='gochair' data-chair='{{tingarr[index]}}'>
+  <view>
+    <view class='start'>{{tingarr[index].startTime}}</view>
+    <view class='end'>{{tingarr[index].endTime}}散场</view>
+  </view>
+  <view>
+    <view>原版{{moviesarr[index].movies[0].effect}}</view>
+    <view>{{tingarr[index].cinema_ting[0].tingname}}</view>
+  </view>
+  <view class='time_money'>{{tingarr[index].money}}元</view>
+  <view>
+    <button>购票</button>
+  </view>
+
+
+</view>
+<view class='time_kb'></view>
+<!-- 观影套餐 -->
+<view class='time_taocan'>观影套餐</view>
+
+<view class='time_baomihua'>
+  <view>
+    <image src='../images/baomihua.jpg'></image>
+  </view>
+  <view class='time_mini'>
+    <view>迷你单人套餐</view>
+    <view class='seat_bao'>26o小爆米花1桶+448ML小杯可乐一杯</view>
+    <view>
+      <text class='time_money'>16.9元</text>
+      <text>影院价：20元</text>
+    </view>
+  </view>
+  <view class='time_yishou'>已售4320</view>
+
+</view>
+
+<view class='time_baomihua'>
+  <view>
+    <image src='../images/baomihua1.jpg'></image>
+  </view>
+  <view class='time_mini'>
+    <view>苏打水单人套餐（c）</view>
+    <view class='seat_bao'>32o小爆米花1桶+330ML苏打水一瓶</view>
+    <view>
+      <text class='time_money'>28.9元</text>
+      <text>影院价：33元</text>
+    </view>
+  </view>
+  <view class='time_yishou'>已售720</view>
+
+</view>
+<view class='time_baomihua'>
+  <view>
+    <image src='../images/baomihua.jpg'></image>
+  </view>
+  <view class='time_mini'>
+    <view>双人矿泉水套餐(2018-9)</view>
+    <view class='seat_bao'>64o小爆米花1桶+矿泉水2瓶</view>
+    <view>
+      <text class='time_money'>39.9元</text>
+      <text>影院价：53元</text>
+    </view>
+  </view>
+  <view class='time_yishou'>已售5430</view>
+
+</view>
+
+<!--明天  -->
+<view hidden="{{currentTab!==1}}">dd</view>

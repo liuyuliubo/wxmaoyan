@@ -1,0 +1,36 @@
+<view class='search_title'>
+  <view class='search_content'>
+    <text>成都</text>
+    <view class="search_section" bindtap='clickcinma'>
+      <icon class="searchcion" size='20' type='search'></icon>
+      <input type="digit" placeholder="找影院" />
+    </view>
+  </view>
+</view>
+<view wx:for='{{cinema}}' wx:key='{{index}}' class='logns_conema' bindtap='clickcinema' data-id='{{item}}'>
+  <view class='cinma_dd'>
+    <view class='cinma_name'>
+    {{item.name}}
+    <view class='cinma_price'>31
+    <view class='cinma_yuan'>元起</view>
+    </view>
+    
+     </view>
+    <view class='cinma_address'>{{item.address}}</view>
+    <view  class='cinma_fea'>
+        <view wx:for='{{item.special}}' wx:key='{{index}}'  class='search_features'>
+      <view class='searh_bk' wx:if='{{item=="小吃"||item=="折扣价"}}'>
+        {{item}}
+      </view>
+       <view class='searh_bk1' wx:if='{{item=="IMAX厅"||item=="座"||item=="改签"||item=="杜比全景声厅"}}'>
+        {{item}}
+      </view>
+
+    </view>
+
+    </view >
+
+  </view>
+ <view class='cinema_distance'>1.8Km</view>
+
+</view>

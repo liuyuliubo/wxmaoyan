@@ -1,0 +1,108 @@
+<view class='pay_max'>
+<view class='pay_title'>
+  支付剩余时间：15：00
+</view>
+<!--电影名等信息  -->
+<view class='pay_movies'>
+  <view> {{movies.movie_name}}</view>
+  <view class='pay_piao'>
+    <view wx:for='{{tingmes[0]}}' wx:key='{{index}}'>
+      <text>{{item.dateOf}}</text>
+      <text> {{item.startTime}}</text>
+    </view>
+    <view class='pay_effect'>{{movies.effect}}</view>
+  </view>
+  <view class='pay_name'>
+    {{tingmes[0][1].name}}
+  </view>
+  <view class='pay_page'>
+    <view wx:for='{{tingmes[1]}}' wx:key='{{index}}' class='pay_row'>
+      {{item.page}}{{item.row}}
+    </view>
+  </view>
+</view>
+<!--票价  -->
+<view class='pay_pay'>
+  <view>票价</view>
+  <view class='pay_zhang'>
+    <view>含服务费3.9元/一张</view>
+    <view class='pay_tigms'>
+      {{tingmes[0][0].money *tingmes[1].length}}元
+    </view>
+  </view>
+</view>
+<!--空白  -->
+<view class='pay_kb'></view>
+<!--折扣卡  -->
+<view class='pay_pay'>
+  <view>折扣卡</view>
+  <view class='pay_zhang'>
+    <view>办理折扣卡，首单立减7元</view>
+    <view>
+      去开卡
+    </view>
+    <view>></view>
+  </view>
+</view>
+<!--活动和优惠券  -->
+<view class='pay_pay'>
+  <view>活动和优惠劵</view>
+  <view class='pay_zhang'>
+    <view>无可用</view>
+    <view>
+    </view>
+    <view>></view>
+  </view>
+</view>
+<!--空白  -->
+<view class='pay_kb'></view>
+<!--退改签须知  -->
+<view class='pay_pay'>
+  <view>退改签须知</view>
+</view>
+
+<!--退改签须知 条件  -->
+<view class='pay_gaiqian'>
+  <view>不可改签</view>
+  <view>不可退款</view>
+  <view>使用观影卡或享受票减小吃特惠时，不可改签</view>
+</view>
+<!--空白  -->
+<view class='pay_kb'></view>
+<!--手机号  -->
+<view class='pay_phone'>
+  手机号
+  <view class='pay_phone1'> 135******63</view>
+</view>
+<!--手机提示信息  -->
+<view class='pay_phonets'>手机号仅用来生成订单，取票码不再以短信发送</view>
+
+<!--空白  -->
+<view class='pay_kb1'></view>
+
+</view>
+
+
+<!--确认支付  -->
+<view class='pay_querenzhif'>
+  <!--还需要支付  -->
+  <view class='pay_haixu'>
+    <view>
+      <view>该场次不可改签</view>
+      <view>该场次不可退票</view>
+
+    </view>
+    <view class='pay_zhifu'>
+      <view>还需要支付： </view>
+      <view>
+        {{tingmes[0][0].money *tingmes[1].length}}元
+      </view>
+    </view>
+
+  </view>
+  <!--确认支付  -->
+  <view>
+    <button class='pay_but' bindtap='clickbut'>确认支付</button>
+  </view>
+
+</view>

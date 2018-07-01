@@ -1,0 +1,258 @@
+.main_title {
+  color: white;
+  background: red;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.main_tit>ul {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+
+.main_tit>ul li:first-child {
+  color: gainsboro;
+}
+
+.main_but>ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0rpx;
+  font-size: 30rpx;
+}
+
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar {
+  flex: none;
+  display: flex;
+  background: #fff;
+  border-bottom: 1rpx solid gray;
+}
+
+.navbar .item {
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.navbar .item.active {
+  color: red;
+}
+
+.navbar .item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 5rpx;
+  left: 55rpx;
+  right: 55rpx;
+  height: 4rpx;
+  background: red;
+}
+
+.index_search {
+  width: 100rpx;
+  text-align: center;
+  border-left: 1rpx solid gray;
+}
+
+.index_search icon {
+  margin-top: 18rpx;
+}
+
+.index_cd {
+  width: 150rpx;
+  font-size: 35rpx;
+  margin-top: 18rpx;
+}
+
+/*---------------------------------------热映------------------------------------------  */
+.index_pai .index_bofang{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 50rpx;
+  top: 70rpx;
+
+}
+.index_pai {
+  /* width: 90%; */
+  display: flex;
+  border-bottom: 1px solid gray;
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  position: relative
+}
+.index_name {
+  font-size: 40rpx;
+}
+.index_moviename{
+   height: 50rpx;
+  overflow: hidden;
+}
+.index_pai1 {
+  width: 380rpx;
+   overflow: hidden; 
+  margin-left: 15rpx;
+
+}
+.index_pai1>view{
+    margin-bottom: 15rpx;
+
+}
+
+.index_pai image {
+  width: 150rpx;
+  height: 170rpx;
+}
+
+.index_actors {
+  width: 400rpx;
+  height: 28rpx;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  font-size: 20rpx;
+  color: gray;
+}
+.index_type {
+  font-size: 24rpx;
+}
+.index_pf {
+  color: gold;
+  margin-bottom: 25rpx;
+  margin-left: 15rpx;
+
+}
+.index_but {
+  width: 120rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 25rpx;
+  background: red;
+  color: white;
+}
+
+.index_fyc {
+  font-size: 20rpx;
+  color: gray;
+}
+
+.index_rybut {
+  margin: auto;
+}
+
+/* -----------------------------------待映 ---------------------------------------*/
+
+.index_dypai .index_bofang{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 50rpx;
+  top: 60rpx;
+
+}
+.index_dyjq {
+  margin-left: 25rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: gray;
+  font-size: 35rpx;
+}
+
+.index_dyhy {
+  display: flex;
+  overflow: scroll;
+}
+
+.index_dyhy image {
+  width: 130rpx;
+  height: 150rpx;
+  margin-left: 10rpx;
+}
+
+.index_dytitle {
+  font-size: 25rpx;
+  height: 30rpx;
+  overflow: hidden;
+}
+
+.index_dyxk, .index_dyh {
+  color: gray;
+  font-size: 18rpx;
+}
+
+.index_dyh {
+  margin-bottom: 60rpx;
+}
+
+.index_dypai {
+  /* width: 90%; */
+  margin-left: 25rpx;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  border-bottom: 1rpx solid gray;
+  position: relative
+}
+
+.index_dypai image {
+  width: 150rpx;
+  height: 170rpx;
+}
+
+.index_dypa1i1 {
+  margin-left: 25rpx;
+}
+.index_dypa1i1>view{
+  margin-bottom: 15rpx;
+
+}
+
+.index_dybut {
+  width: 120rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: white;
+  background: rgb(10, 118, 245);
+  font-size: 20rpx;
+}
+
+.index_dypai2 {
+  widows: 230rpx;
+  margin: auto;
+}
+
+.index_dytype {
+  color:gray;
+  font-size: 25rpx;
+}
+
+.index_dyr {
+  font-size: 22rpx;
+  color: rgb(243, 210, 26)
+}
+
+.index_name {
+  display: flex;
+  
+}
+
+
+.not_img image {
+  width: 80rpx;
+  height: 20rpx;
+  vertical-align: baseline;
+}

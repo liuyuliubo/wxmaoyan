@@ -1,0 +1,26 @@
+
+
+<view>
+
+<view class='mylist_title'>
+共有{{movies.length}}个订单
+</view>
+
+<view wx:for='{{movies}}' wx:key='{{index}}' class='mylist'>
+  <view class='mylist_img'>
+    <image src='{{Ips+item.movie_img}}'></image>
+      <view class='mylist_name'>
+    <view>{{item.movie_name}}</view>
+    <view class='mylist_type'>{{item.movie_type}}</view>
+    <view class='mylist_type'>{{item.movie_uptime}}大陆上映</view>
+  </view>
+  </view>
+
+  <view class='malist_soc'>
+  <view>{{item.movie_soc}}分</view>
+  <view>订单已完成</view>
+  </view>
+
+
+</view>
+</view>

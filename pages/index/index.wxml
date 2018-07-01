@@ -1,0 +1,102 @@
+<view>
+  <!-- <view class='main_title'>猫眼电影</view> -->
+
+
+
+  <view class="navbar">
+    <text class='index_cd' >成都</text>
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+    <view class='index_search'>
+      <icon type="search" size="25" color="{{item}}" color='red' bindtap="clicksearch" />
+    </view>
+  </view>
+
+
+
+  <!-----------------------------热映 -------------------------->
+
+  <!-- <image src='pages/images/搜索.png'></image> -->
+  <view hidden="{{currentTab!==0}}">
+    <view wx:for='{{arr}}' wx:key='{{index}}' class='index_pai'>
+      <view bindtap='indexclickimg' data-id='{{item.movies[0]._id}}'>
+        <image src='../images/bofang.png' class='index_bofang'></image>
+        <image src='{{Ips+item.movies[0].movie_img}}'></image>
+      </view>
+      <view class='index_pai1' bindtap="indexTap" data-id='{{item.movies[0]._id}}'>
+        <view class='index_name'>
+          <view class='index_moviename'> {{item.movies[0].movie_name}} </view>
+          <view wx:if='{{item.movies[0].effect=="3D"}}' class='not_img'>
+            <image src='../images/d3.png'></image>
+          </view>
+          <view wx:if='{{item.movies[0].effect=="2D"}}' class='not_img'>
+            <image src='../images/d2.png'></image>
+          </view>
+
+        </view>
+        <view class='index_type'>{{item.movies[0].movie_type}}</view>
+        <view class='index_actors'>
+          演员：
+          <view wx:for='{{item.movies[0].actors}}' wx:key='{{index}}' class='index_actors1'>
+            <view> {{item.name}}</view>
+          </view>
+        </view>
+        <view class='index_fyc'>今天有165家影院放映876场 </view>
+      </view>
+      <view class='index_rybut'>
+        <view class='index_pf'>{{item.movies[0].movie_soc}}分</view>
+        <button class='index_but' bindtap='indexclickbut' data-id='{{item.movies[0]._id}}'>购买</button>
+      </view>
+    </view>
+  </view>
+
+
+  <!--------------------------------待映----------------------------->
+  <view hidden="{{currentTab!==1}}">
+    <view class='index_dyjq'>近期最受欢迎</view>
+    <view class='index_dyhy'>
+      <view wx:for='{{daiy}}' wx:key='{{index}}'>
+        <view>
+          <image src='{{Ips+item.movies[0].movie_img}}' bindtap="indexTap" data-id='{{item.movies[0]._id}}'></image>
+          <view class='index_dytitle'>{{ item.movies[0].movie_name}}</view>
+          <view class='index_dyxk'>{{ item.movies[0].like}}人想看</view>
+          <view class='index_dyh'>{{ item.movies[0].movie_uptime}}</view>
+        </view>
+      </view>
+      <view>
+
+      </view>
+    </view>
+    <view class='index_dyjq'>
+      6月29日 周四
+    </view>
+
+    <view wx:for='{{coming}}' wx:key='{{index}}' class='index_dypai'>
+      <view bindtap="indexclickimg" data-id='{{item.movies[0]._id}}'>
+        <image src='../images/bofang.png' class='index_bofang'></image>
+        <image src='{{Ips+item.movies[0].movie_img}}'></image>
+      </view>
+      <view class='index_dypa1i1' bindtap="indexTap" data-id='{{item.movies[0]._id}}'>
+        <view class='index_name'>{{item.movies[0].movie_name}}</view>
+        <view class='index_dytype'>{{item.movies[0].movie_type}}</view>
+        <view class='index_actors'>
+          主演：
+          <view wx:for='{{item.movies[0].actors}}' wx:key='{{index}}'>
+            <view> {{item.name}}</view>
+          </view>
+        </view>
+        <view class='index_dytype'>{{item.movies[0].movie_uptime}}大陆上映</view>
+      </view>
+      <view class='index_dypai2'>
+        <view class='index_dyr'>{{item.movies[0].like}}人想看</view>
+        <button class='index_dybut'  bindtap='indexclickbut' data-id='{{item.movies[0]._id}}'>预售</button>
+  
+      </view>
+
+
+    </view>
+
+  </view>
+
+
+
+</view>

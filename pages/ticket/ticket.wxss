@@ -1,0 +1,71 @@
+
+.header{
+  height: 90rpx;
+  border-bottom:1rpx solid lightgray ;
+  display: flex;
+  overflow: auto;
+  line-height: 80rpx
+}
+.headertwo{
+  width: 210rpx;
+  border-bottom:1rpx solid red;
+  color:red;
+  font-size: 30rpx;
+  text-align: center
+}
+.headertwo2{
+    width: 210rpx;
+    font-size: 30rpx;
+    text-align: center
+}
+
+
+
+/* 影院渲染 */
+.cinema_house{
+  width: 96%;
+  height: 250rpx;
+  border-bottom: 1rpx solid lightgray;
+  margin: 0 auto
+}
+.special{
+  display: flex
+}
+.name{
+  font-size: 40rpx;
+  margin: 20rpx 0 10rpx;
+}
+.address{
+  font-size: 30rpx;
+  margin-bottom: 5rpx
+}
+/* 座位 */
+.chair{
+  padding:0 10rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 20rpx;
+  color:lightblue;
+  border-color:lightblue;
+  /* border-radius:7rpx;  */
+  margin: 5rpx 0;
+  outline: none;
+}
+.yellow{
+   padding:0 10rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 22rpx;
+  color:orange;
+  border-color:orange;
+   /* border-radius:7rpx; */
+  margin: 5rpx 0;
+  outline: none;
+}
+.decmoney{
+  font-size: 20rpx;
+  color:lightgray;
+  margin: 8rpx 0
+}

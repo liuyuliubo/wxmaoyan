@@ -1,0 +1,9 @@
+
+
+<view class='login_img'>
+<image src='../images/logo_s.png'></image>
+</view>
+<view>
+<button class='login_wx' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">微信一键登录</button>
+<button class='login_qita' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">其它方式登录</button>
+</view>

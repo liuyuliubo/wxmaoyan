@@ -1,0 +1,32 @@
+
+<view>
+ <view wx:for='{{arr}}' wx:key='{{index}}' class='see_title'>
+ 想看{{item.movies.length}}部电影 
+</view> 
+    <view wx:for='{{arr[0].movies}}' wx:key='{{index}}' class='index_pai'>
+      <view bindtap='indexclickimg' data-id='{{item._id}}'>
+        <image src='../images/bofang.png' class='index_bofang'></image>
+        <image src='{{Ips+item.movie_img}}'></image>
+      </view>
+      <view class='index_pai1' bindtap="indexTap" data-id='{{item._id}}'>
+        <view class='index_name'>
+          <view class='index_moviename'> {{item.movie_name}} </view>
+          <view wx:if='{{item.effect=="3D"}}' class='not_img'>
+            <image src='../images/d3.png'></image>
+          </view>
+          <view wx:if='{{item.effect=="2D"}}' class='not_img'>
+            <image src='../images/d2.png'></image>
+          </view>
+        </view>
+        <view class='index_type'>{{item.en_name}}</view>
+        <view class='index_type'>{{item.movie_type}}</view>
+        <view class='index_fyc'> {{item.movie_uptime}}大陆上映 </view>
+      </view>
+      <view class='index_rybut'>
+        <view class='index_pf'>{{item.movie_soc}}分</view>
+      </view>
+    </view>
+
+
+</view>
+

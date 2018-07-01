@@ -1,0 +1,80 @@
+
+<view class='seat_title'>
+  <view>
+    {{tingmes[1].name}}
+  </view>
+  <view class='seat_day'>
+    今天{{tingmes[0].dateOf}} {{tingmes[0].startTime}} 原版
+  </view>
+
+</view>
+
+<view class='seat_zuowei'>
+  <view>
+    <image src='../images/seat2.png'></image>可选</view>
+  <view>
+    <image src='../images/seat3.png'></image>不可选</view>
+  <view>
+    <image src='../images/seat1.png'></image>已选</view>
+</view>
+
+<view class='seat_maxting'>
+  <view wx:for='{{tingmes[0].cinema_ting}}' class='seat_deta' wx:key='{{index}}'>
+    <view class='seat_pm'>
+      <image src='../images/seat.png'></image>
+    </view>
+    <view class='seat_name'>{{item.tingname}}</view>
+  </view>
+  <view class='seat_yingmu'>荧幕中央</view>
+
+  <!--渲染座位  -->
+  <view wx:for='{{chair}}' wx:key='{{index}}' class='seat_chair'>
+
+    <view wx:for='{{item}}' class='chairimg' wx:key='{{index1}}' wx:for-index='index1'>
+
+      <image src='' wx:if='{{item=="0"}}' class='chair_img'></image>
+
+      <image src='../images/seat2.png' wx:if='{{item=="1"}}' wx:if='{{item==1}}' bindtap='changimg' class='chair_img' data-page='{{index}}' data-row='{{index1}}' data-item='{{item}}'></image>
+
+      <image src='../images/seat1.png' wx:if='{{item=="1"}}' wx:if='{{item==2}}' bindtap='changimg' class='chair_img' data-page='{{index}}' data-row='{{index1}}' data-item='{{item}}'></image>
+  <image src='../images/seat3.png'wx:if='{{item=="3"}}' ></image>
+    </view>
+
+  </view>
+
+</view>
+<!--推荐座位  -->
+<view class='seat_footer'>
+  <view wx:if='{{isShowmes}}' class='seat_one'> 推荐座位</view>
+  <view class='btntuijian' wx:if='{{isShowmes}}'>
+    <button class='seat_people'>1人</button>
+    <button class='seat_people'>2人</button>
+    <button class='seat_people'>3人</button>
+    <button class='seat_people'>4人</button>
+    <button class='seat_people'>5人</button>
+  </view>
+  <view wx:if='{{isShow}}' class='seat_one'>已选座位</view>
+
+  <view>
+    <view wx:if='{{isShow}}' class='seat_butyx'>
+      <view wx:for='{{changedchair}}' wx:key='{{index}}'>
+        <text class='peoplebtn1' bindtap='clear_btn' data-page='{{item.page1}}' data-row='{{item.row1}}' data-index='{{item.index}}'>{{item.page}},{{item.row}}</text>
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class='footer'>
+    <view wx:if='{{isShowmes}}' class='seat_one'>最多购买5张</view>
+    <view class='paymes' wx:if='{{isShow}}'>
+      <view class='paymes1'> {{tingmes[0].money*changedchair.length}}元</view>
+      <view> {{tingmes[0].money}}X{{changedchair.length}}</view>
+    </view>
+
+    <view>
+      <button class='selectchair' wx:if='{{isShowmes}}' disabled>请先选座</button>
+      <button class='selectchair1' wx:if='{{isShow}}' bindtap='click_confirm' >确认选座</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+
+<view class='main_mytitle'>
+  <view class='main_my' bindtap='click_list'>
+    <view class='main_dd'  >我的订单</view>
+    <view class='main_gd'>></view>
+  </view>
+
+  <view class='main_my'>
+    <view class='main_dd'>优惠券</view>
+    <view class='main_gd'>></view>
+  </view>
+
+
+  <view class='main_my'>
+    <view class='main_dd'>影院会员卡</view>
+    <view class='main_gd'>></view>
+  </view>
+
+  <view class='main_gh'></view>
+  <view class='main_mypai' bindtap='clicklook'>
+    <view class='main_dd' >想看的电影</view>
+    <view class='main_gd'>></view>
+  </view>
+
+  <view class='main_mypai'>
+    <view class='main_dd'>看过的电影</view>
+    <view class='main_gd'>></view>
+  </view>
+
+</view>
+<view class='main_mybut'>
+<image src='../images/banquan.png'></image>
+  猫眼电影 客户电话：
+  <text bindtap='click_phone' >1010-5335</text>
+
+</view>
+
+

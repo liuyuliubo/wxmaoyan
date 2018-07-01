@@ -1,0 +1,174 @@
+<view wx:for='{{hot_movies}}' wx:key='{{index}}'>
+  <view class='datails_top'>
+    <image src='{{Ips+item.movie_img}}'></image>
+    <view class='datails_content'>
+      <view bindtap='click_videoimg' data-id='{{item._id}}'>
+        <image src='../images/bofang.png' class='index_bofang'></image>
+        <image src='{{Ips+item.movie_img}}'></image>
+      </view>
+      <view class='details_pai'>
+        <view class='details_moviename'>{{item.movie_name}}
+
+        </view>
+        <view class='details_enname'>{{item.en_name}}</view>
+        <view class='details_moviesoc'>
+          <image src='../images/wx2.png'></image>
+          {{item.movie_soc}}</view>
+        <view class='detail_pj'>
+          35.2万人评
+
+
+        </view>
+        <view class='details_imax'>
+
+          <view>
+            {{item.movie_type}}
+          </view>
+          <view wx:if='{{item.effect=="3D"}}' class='not_img'>
+            <image src='../images/d3.png'></image>
+          </view>
+          <view wx:if='{{item.effect=="2D"}}' class='not_img'>
+            <image src='../images/d2.png'></image>
+          </view>
+
+
+        </view>
+        <view class='detail_pj'>{{item.area}}/{{item.movie_time}}分钟</view>
+        <view class='detail_pj'>{{item.movie_uptime}}大陆上映</view>
+      </view>
+
+    </view>
+    <view class='details_djbut'>
+      <button bindtap="clickbut" data-id='{{item._id}}'>
+        <image src='../images/tx.png' wx:if='{{isok2}}'></image>
+        <image src='../images/tx1.png' wx:if='{{isdown2}}'></image>
+        想看</button>
+      <button bindtap="clickbut1">
+        <image src='../images/wx.png' wx:if='{{isok1}}'></image>
+        <image src='../images/wx1.png' wx:if='{{isdown1}}'></image>
+        评分</button>
+    </view>
+
+  </view>
+  <view class='details_cd'>
+    <image src='../images/cd.png'></image>
+    有一个彩蛋，片尾字幕后
+
+  </view>
+  <view class='details_kb'> </view>
+  <!--简介  -->
+  <view class='details_info' bindtap="upinfo" wx:if='{{isok}}'>
+    {{item.info}}
+  </view>
+  <view class='details_info1' bindtap="upinfo" wx:if='{{isdown}}'>
+    {{item.info}}
+  </view>
+
+
+  <view class='details_kb'> </view>
+  <!--演职人员  -->
+
+  <view class='details_qbdir'>
+    <view class='details_director'> 演职人员</view>
+    <view class='details_those'>
+      <view class='details_dy'>
+        <image src='{{Ips+item.director.img}}' bindtap="clickimg" data-id='{{item.director}}'></image>
+        <view>{{item.director.name}}</view>
+        <view>导演</view>
+      </view>
+      <view wx:for='{{item.actors}}' wx:key='{{index}}' class='details_actorsim'>
+        <image src='{{Ips+item.img}}' bindtap="clickimg1" data-id='{{item}}'></image>
+        <view> {{item.name}}</view>
+        <view> {{item.portray}}</view>
+
+
+      </view>
+    </view>
+    <view class='details_kb'> </view>
+    <!--票房  -->
+    <view class='details_director'> 票房</view>
+    <view class='details_offic'>
+      <view class='details_lie'>
+        <view class='details_boxoffic' wx:if='{{item.box_office_Y}}'>{{item.box_office_Y}}</view>
+        <view class='details_boxoffic' wx:if='{{!item.box_office_Y}}'>暂无</view>
+
+        <view class='details_ranking'>昨日票行排行</view>
+      </view>
+      <view class='details_lie'>
+        <view class='details_boxoffic'>{{item.box_office_week}}</view>
+        <view class='details_ranking'>首周票房(万)</view>
+      </view>
+      <view class='details_lie'>
+        <view class='details_boxoffic'> {{item.box_office_all}}</view>
+        <view class='details_ranking'>累计票房(万)</view>
+      </view>
+
+    </view>
+    <!--视频，剧照  -->
+    <view class='details_kb'> </view>
+    <view class='details_director'>视频和剧照</view>
+
+    <!--视频，剧照图片  -->
+    <view class='details_vd'>
+      <!-- 视频 -->
+
+      <view class='video_ding' bindtap='videoclick' data-id='{{item._id}}'>
+        <image src='../images/bftu.png' class='video_min'></image>
+        <image src='{{Ips+lmovie.video_img}}'></image>
+      </view>
+
+
+
+
+
+      <view wx:for='{{item.img_box}}' class='details_still' wx:key='{{index}}'>
+        <image src='{{Ips+item}}' bindtap='biggerImg' data-list="{{Ips+item}}"></image>
+      </view>
+    </view>
+    <view class='details_comments'>
+      <view>观众评论</view>
+      <view class='details_writecomments'> 写短评</view>
+    </view>
+    <view class='details_head'>
+      <image src='../images/touxiang.png'></image>
+      <view class='details_ch'>
+        <view>差三流</view>
+        <view class='details_five'>
+          <image src='../images/wx2.png'></image>
+        </view>
+        <view>那个敲地板的恐龙真的吓死我了</view>
+      </view>
+
+
+    </view>
+     <view class='details_head'>
+      <image src='../images/touxiang.png'></image>
+      <view class='details_ch'>
+        <view>万万晶</view>
+        <view class='details_five'>
+          <image src='../images/wx2.png'></image>
+        </view>
+        <view>或多个过过过多所过多过干啥规定公司广东省港干啥规定干撒的干啥规定死光光的</view>
+      </view>
+
+
+    </view>
+    <view class='details_head1'>
+      <image src='../images/touxiang.png'></image>
+      <view class='details_ch'>
+        <view>张翠花</view>
+        <view class='details_five'>
+          <image src='../images/wx2.png'></image>
+        </view>
+        <view>都是上帝华东师大好好打各过各的合适的话你猜呢</view>
+      </view>
+
+    </view>
+
+  </view>
+  <view class='details_gou' bindtap="clickbutyouhui" data-id='{{item.director}}'>
+    <button>
+      优惠购票
+    </button>
+  </view>
+</view>

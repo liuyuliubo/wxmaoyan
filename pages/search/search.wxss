@@ -1,0 +1,162 @@
+.search_title{
+  height: 80rpx;
+  padding-top: 15rpx;
+  background: rgb(245, 245, 248);
+}
+.search_content {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  line-height: 60rpx;
+
+}
+.search_section {
+    background: white;
+  width: 85%;
+  border: 1rpx  solid gainsboro;
+
+  border-radius: 10rpx;
+}
+.search_section input {
+  margin-left: 80rpx;
+  height: 60rpx;
+  border-radius: 5px;
+}
+
+.searchcion {
+  margin: 10rpx 10rpx 10rpx 25rpx;
+  position: absolute;
+  left: 35rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.search_can{
+  color: red
+}
+/*搜索出来的影院  */
+.search_wanda{
+    width: 90%;
+   margin: auto; 
+  display: flex;
+  justify-content: space-between;
+
+ border-bottom: 1rpx solid gray;
+
+
+  
+}
+.search_distance{
+  font-size: 26rpx;
+  color: gray;
+  margin-top: 60rpx
+}
+.search_features {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 20rpx;
+  margin-right: 10rpx;
+}
+.searh_bk {
+  vertical-align: baseline;
+  color: gold;
+}
+
+.searh_bk1 {
+  border: 1rpx solid lightblue;
+  color: lightblue;
+  vertical-align: baseline;
+}
+
+.cinma_fea {
+  display: flex;
+}
+.cinma_dd {
+  padding-bottom: 35rpx;
+
+
+}
+
+.cinma_name {
+  font-size: 30rpx;
+  display: flex;
+  margin-bottom: 15rpx;
+}
+
+.cinma_address {
+  font-size: 24rpx;
+  color: gray;
+}
+
+.cinma_price {
+  display: flex;
+  color: red;
+}
+.cinma_price{
+  margin-left: 10rpx;
+}
+
+.cinma_yuan {
+  font-size: 20rpx;
+  padding-top: 8rpx;
+}
+.cinma_address{
+  margin-bottom: 15rpx;
+}
+/*电影、电视剧  */
+.search_mov{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid gray;
+  margin-top: 25rpx;
+  margin-bottom:25rpx;
+  
+
+}
+.search_mov image{
+  width: 150rpx;
+  height: 170rpx;
+}
+.search_but{
+  background: red;
+  color: white;
+  font-size: 26rpx;
+  width: 130rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.search_person{
+  color: gold;
+  font-size: 22rpx;
+}
+.search_en{
+  color: gray;
+  font-size: 22rpx;
+}
+.search_moviename{
+  font-size: 30rpx;
+}
+.search_movies{
+  width: 60%;
+  overflow: hidden;
+  margin-left: 25rpx;
+}
+.seach_dianshi{
+  color: gray;
+  /* width: 90%; */
+  margin-left: 25rpx;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid gainsboro;
+  height: 70rpx ;
+  line-height: 70rpx;
+}
+.search_nocontent{
+  font-size: 30rpx;
+  text-align: center;
+  color: red
+}

@@ -1,0 +1,28 @@
+.login_img image{
+  width: 400rpx;
+  height: 100rpx;
+
+   margin-top: 270rpx;
+   
+
+}
+.login_img{
+    width: 400rpx;
+    margin: auto
+
+}
+.login_wx {
+  background: green;
+  width: 75%;
+  margin: auto;
+  border-radius: 10rpx;
+   margin-top: 50rpx; 
+  margin-bottom: 50rpx;
+}
+
+.login_qita {
+  background: gainsboro;
+  width: 75%;
+  margin: auto;
+  border-radius: 10rpx;
+}

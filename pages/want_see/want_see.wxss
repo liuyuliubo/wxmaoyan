@@ -1,0 +1,82 @@
+/*想看电影的总数  */
+page{
+  background: whitesmoke
+}
+.see_title{
+  font-size: 26rpx;
+  color: gray;
+   background: whitesmoke;
+  padding-left: 25rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1rpx solid gainsboro
+
+}
+
+
+.index_pai .index_bofang{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 65rpx;
+  top: 70rpx;
+}
+.index_pai {
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding-left: 25rpx;
+  paddind-top: 25rpx;
+  margin-bottom: 25rpx;
+  position: relative;
+  background: white
+}
+.index_name {
+  font-size: 40rpx;
+}
+.index_moviename{
+   height: 50rpx;
+  overflow: hidden;
+}
+.index_pai1 {
+  width: 380rpx;
+   overflow: hidden; 
+  margin-left: 15rpx;
+}
+.index_pai1>view{
+    margin-bottom: 15rpx;
+}
+.index_pai image {
+  width: 150rpx;
+  height: 200rpx;
+}
+.index_type {
+  font-size: 24rpx;
+}
+.index_pf {
+  color: gold;
+  margin-bottom: 25rpx;
+  margin-left: 15rpx;
+}
+.index_but {
+  width: 120rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 25rpx;
+  background: red;
+  color: white;
+}
+.index_fyc {
+  font-size: 20rpx;
+  color: gray;
+}
+.index_rybut {
+  margin: auto;
+}
+.index_name {
+  display: flex; 
+}
+.not_img image {
+  width: 80rpx;
+  height: 20rpx;
+  vertical-align: baseline;
+}

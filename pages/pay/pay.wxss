@@ -1,0 +1,139 @@
+.pay_max{
+  overflow: scroll
+
+}
+.pay_title{
+  color: gold;
+  text-align: center;
+  font-size: 26rpx;
+  background: rgb(247, 239, 195);
+  height: 100rpx ;
+  line-height: 100rpx;
+
+}
+.pay_movies{
+  padding: 25rpx 0rpx;
+  margin-left: 25rpx;
+  border-bottom: 1rpx solid gainsboro
+}
+.pay_piao{
+    color: red
+
+}
+.pay_piao,.pay_page{
+  display: flex;
+  font-size: 30rpx;
+}
+.pay_row{
+  margin-right: 15rpx;
+  border: 1rpx solid black
+}
+.pay_effect{
+  margin-left: 15rpx;
+
+}
+.pay_name{
+    font-size: 30rpx;
+
+}
+/*票价  */
+.pay_pay{
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  justify-content: space-between;
+  padding: 0rpx 25rpx;
+  border-bottom: 1rpx solid gainsboro;
+  font-size: 30rpx;
+  color: gray
+}
+.pay_zhang{
+  display: flex
+}
+.pay_zhang view:nth-child(2){
+  color: red
+}
+/*空白  */
+.pay_kb{
+  height: 20rpx;
+  background: gainsboro
+}
+/*退改签须知 条件  */
+.pay_gaiqian{
+  padding-left: 25rpx;
+  border-bottom: 1rpx solid gainsboro;
+  margin: 25rpx 0rpx;
+  font-size: 26rpx;
+  color: gray
+
+}
+.pay_gaiqian view{
+  margin-bottom: 15rpx;
+
+}
+/*手机号  */
+.pay_phone{
+  display: flex;
+  margin-left: 25rpx ;
+  border-bottom:  1rpx solid gainsboro;
+  height: 90rpx ;
+  line-height: 90rpx;
+}
+.pay_phone1{
+  margin-left: 20rpx;
+  color: gray
+
+}
+/*手机提示信息  */
+.pay_phonets{
+  height: 60rpx;
+  line-height: 60rpx;
+  color: gainsboro;
+  font-size: 24rpx;
+  border-bottom: 1rpx solid gainsboro
+
+}
+/*还需要支付  */
+.pay_haixu{
+  display: flex;
+  justify-content: space-between;
+  padding: 25rpx 25rpx;
+  color: gray;
+  font-size: 24rpx;
+}
+.pay_zhifu{
+  display: flex
+}
+.pay_zhifu view:nth-child(1){
+  font-size: 30rpx;
+  color: black
+}
+.pay_zhifu view:nth-child(2){
+  font-size: 30rpx;
+  color: red
+}
+.pay_but{
+  width: 100%;
+  color: white;
+  background: orange
+
+}
+
+.pay_querenzhif{
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  background: white
+}
+
+/*空白  */
+.pay_kb1{
+  height: 20rpx;
+  background: gainsboro;
+  margin-bottom: 300rpx;
+}
+.pay_tigms{
+  font-size: 30rpx;
+  margin-left: 15rpx
+}

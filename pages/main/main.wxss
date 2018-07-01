@@ -1,0 +1,49 @@
+.main_my {
+
+  height: 80rpx;
+  margin-left: 25rpx;
+  padding-right: 25rpx;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid gainsboro;
+  font-size: 25rpx;
+}
+
+.main_gd {
+  color: gray;
+}
+
+.main_mypai {
+  height: 80rpx;
+  margin-left: 25rpx;
+  padding-right: 25rpx;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid gainsboro;
+  font-size: 25rpx;
+  margin-top: 20rpx;
+}
+
+.main_gh {
+  height: 30rpx;
+  background: whitesmoke;
+  margin-top: 10rpx;
+}
+
+.main_mybut {
+  font-size: 25rpx;
+  width: 400rpx;
+  margin: auto;
+  margin-top: 500rpx;
+}
+
+.main_mybut text {
+  color: gold;
+}
+.main_mybut image{
+  width: 20rpx ;
+  height: 20rpx;
+}
+

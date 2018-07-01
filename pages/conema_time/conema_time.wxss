@@ -1,0 +1,235 @@
+.contime_title {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 95rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+
+.contime_title image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 15rpx;
+}
+
+.contime_name {
+  font-size: 36rpx;
+  margin-bottom: 15rpx;
+}
+
+.contime_address {
+  color: gray;
+  font-size: 24rpx;
+}
+
+.contime_images {
+  width: 70rpx;
+  text-align: center;
+  border-left: 1rpx solid gray;
+}
+.contime_ditu{
+    font-size: 20rpx;
+margin-top: -25rpx;
+}
+
+/*对应电影  */
+
+.time_img  {
+  position: relative;
+  margin: 40rpx 0rpx;
+}
+
+ .time_img image:first-child {
+  width: 100%;
+  height: 250rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+   z-index: -10; 
+  filter: blur(22rpx);
+  overflow: hidden
+
+} 
+.time_img image:nth-child(2){
+width: 70rpx;
+  height: 80rpx;
+  position: absolute;
+  top:230rpx;
+  left: 360rpx;
+
+}
+
+.time_img1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.start{
+  font-size: 40rpx;
+  color: black
+}
+
+.conmaindex_img {
+  margin: 35rpx 15rpx;
+}
+.bigimg{
+   margin: 35rpx 15rpx;
+   border: 1rpx solid white
+
+}
+.time_img1 image {
+  margin-top: -50rpx;
+  width: 170rpx;
+  height: 250rpx;
+}
+.time_moviename{
+  text-align: center;
+  margin-bottom: 25rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid gainsboro
+  
+
+}
+.time_soc{
+font-size: 30rpx;
+}
+.time_moviesoc{
+  color: goldenrod
+
+}
+.time_director{
+  color: gray;
+  font-size: 24rpx;
+}
+
+/*开卡  */
+
+.time_goupiao {
+  color: gold;
+  display: flex;
+}
+
+.time_kaika {
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-left: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+}
+.time_zhekou{
+    background: rgb(253, 246, 207);
+
+}
+ .time_kaika{
+  color: gray
+} 
+
+.time_goupiaoka {
+  margin: auto;
+  margin-right: 15rpx;
+  font-size: 20rpx;
+  color: red;
+}
+/* 今天明天 */
+
+
+.navbar {
+  flex: none;
+  display: flex;
+  background: #fff;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid gray;
+}
+
+.navbar .item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: red;
+}
+
+.navbar .item {
+  position: relative;
+  text-align: center;
+  width: 130rpx;
+  line-height: 80rpx;
+}
+
+.navbar .item.active {
+  color: red;
+}
+/*影厅  */
+.time_ting{
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  margin-left: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid gainsboro;
+  font-size: 26rpx;
+  margin-bottom: 10rpx;
+  color: gray;
+  vertical-align: top
+}
+button{
+  color: white;
+  background: red;
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  margin-top: 25rpx;
+
+}
+.time_money{
+  color: red
+}
+.time_kb{
+  height: 20rpx;
+  background: gainsboro
+}
+.time_taocan{
+  margin-left: 25rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  border-bottom: 1rpx solid gainsboro
+}
+/*观影套餐  */
+.time_baomihua{
+
+  margin:35rpx auto;
+ margin-left: 25rpx;
+  display: flex;
+   justify-content: space-between ;
+   font-size: 26rpx;
+   color: gray;
+   border-bottom: 1rpx solid gainsboro
+}
+.time_baomihua image{
+  width: 150rpx;
+  height: 170rpx;
+}
+.time_mini{
+  margin-left: 15rpx;
+}
+.time_mini view:first-child{
+  font-size: 35rpx;
+  color: black
+}
+.time_money{
+  color: red
+}
+.seat_bao{
+  width: 350rpx;
+  overflow: hidden
+}
+.time_yishou{
+ margin-top: 90rpx;
+ color: gray
+}

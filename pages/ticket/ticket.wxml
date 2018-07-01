@@ -1,0 +1,31 @@
+
+
+<view>
+  <view class='header'>
+    <view wx:for='{{navbar}}' wx:key='{{index}}'>
+      <view class='{{num==index?"headertwo":"headertwo2"}}' data-index='{{index}}' data-date='{{item.year}}-{{item.month}}-{{item.day}}' bindtap="navbarTap">{{item.week}}{{item.month}}月{{item.day}}日</view>
+    </view>
+  </view>
+
+  <view>
+    <view wx:if='{{allcinema.length==0}}'>
+      本日暂无上映
+    </view>
+    <view>
+      <view wx:if='{{allcinema.length!=0}}' wx:for='{{allcinema}}' wx:key='{{index}}'>
+        <view class='cinema_house' bindtap='gomacth' data-id='{{item.cinema}}' data-idd='{{item.movies[0]}}'>
+          <view class='name'>{{item.cinema[0].name}}32元起</view>
+          <view class='address'>{{item.cinema[0].address}}</view>
+          <view class='special'>
+            <view wx:for='{{item.cinema[0].special}}' wx:key='{{index}}'>
+              <button class='chair' wx:if='{{item=="座"||item=="IMAX厅"||item=="杜比全景声厅"||item=="退"||item=="改签"||item=="3D厅"||item=="4D厅"||item=="儿童厅"}}'>{{item}}</button>
+              <button class='yellow' wx:if='{{item=="折扣价"||item=="小吃"}}'>{{item}}</button>
+            </view>
+          </view>
+          <view class='decmoney'>开卡特惠，首单最高立减30元</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

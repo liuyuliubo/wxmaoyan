@@ -1,0 +1,83 @@
+.video_controls {
+  width: 100%;
+}
+
+.video_man {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+}
+
+.video_moviename {
+  font-size: 30rpx;
+}
+
+.video_soc {
+  display: flex;
+}
+
+.video_movie_soc {
+  color: goldenrod;
+}
+
+.video_but {
+  background: red;
+  color: white;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-top: 15rpx;
+  font-size: 25rpx
+}
+
+.video_kb {
+  height: 20rpx;
+  background: whitesmoke;
+}
+
+.video_moviename {
+  font-size: 40rpx;
+}
+.video_listcon {
+  padding: 15rpx;
+  font-size: 30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+.video_yg image{
+  width: 150rpx;
+  height: 170rpx;
+
+}
+.video_ding{
+    position: relative
+
+}
+.video_yg  .video_min{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 80rpx;
+  top: 110rpx; 
+} 
+.video_yg{
+  width: 90%;
+  margin:30rpx auto;
+  display: flex;
+  border-bottom: 1rpx solid gainsboro
+}
+.video_voffice{
+    margin-left: 20rpx;
+}
+.index_guan{
+  font-size: 26rpx;
+  color: gray;
+  margin-top: 60rpx;
+  display: flex
+}
+.index_guan image{
+  width: 30rpx ;
+  height: 30rpx;
+}

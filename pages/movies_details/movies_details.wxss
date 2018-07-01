@@ -1,0 +1,282 @@
+.datails_top>image {
+  width: 100%;
+  height: 440rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: -1;
+  filter: blur(15rpx);
+  border: 1RPX solid red;
+}
+
+.datails_content {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  position: relative;
+}
+
+.datails_content .index_bofang {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 50rpx;
+  top: 100rpx;
+}
+
+.datails_content image {
+  width: 150rpx;
+  height: 260rpx;
+  margin-top: 35rpx;
+}
+
+.details_imax {
+  display: flex;
+  font-size: 20rpx;
+  color: white;
+  height: 40rpx;
+}
+
+.details_moviename {
+  color: white;
+  font-size: 30rpx;
+}
+
+.details_enname {
+  color: white;
+  font-size: 20rpx;
+}
+
+.details_moviesoc {
+  color: goldenrod;
+}
+
+.details_moviesoc image {
+  width: 150rpx;
+  height: 40rpx;
+}
+
+.detail_pj {
+  color: gainsboro;
+  font-size: 20rpx;
+}
+
+.details_pai {
+  margin-left: 20rpx;
+  margin-top: 35rpx;
+}
+
+.details_djbut {
+  display: flex;
+  justify-content: center;
+  margin-top: 25rpx;
+}
+
+.details_djbut button {
+  width: 45%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.details_djbut image {
+  width: 50rpx;
+  height: 40rpx;
+}
+
+.details_cd {
+  height: 70rpx;
+  font-size: 25rpx;
+  line-height: 70rpx;
+  margin-top: 35rpx;
+}
+
+.details_cd image {
+  margin-top: 15rpx;
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: baseline;
+}
+
+.not_img image {
+  width: 80rpx;
+  height: 20rpx;
+  margin-top: 8rpx;
+  margin-left: 10rpx;
+  vertical-align: baseline;
+}
+
+.details_kb {
+  height: 25rpx;
+  background: gainsboro;
+}
+
+/*简介  */
+
+.details_info {
+  width: 90%;
+  margin: 20rpx auto;
+  font-size: 30rpx;
+  height: 125rpx;
+  overflow: hidden;
+}
+
+.details_info1 {
+  width: 90%;
+  margin: 20rpx auto;
+  font-size: 30rpx;
+}
+
+/*演员  */
+
+.details_qbdir {
+  width: 90%;
+  margin: auto;
+}
+
+.details_director {
+  font-size: 28rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+}
+
+.details_dy image {
+  width: 145rpx;
+  height: 200rpx;
+}
+
+.details_those {
+  display: flex;
+  overflow: scroll;
+  font-size: 20rpx;
+  text-align: center;
+}
+
+.details_those image {
+  width: 145rpx;
+  height: 200rpx;
+}
+
+.details_actorsim {
+  margin-left: 15px;
+}
+
+/*票房  */
+
+.details_director {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.details_offic {
+  display: flex;
+  justify-content: space-between;
+  height: 150rpx;
+}
+
+.details_boxoffic {
+  color: red;
+}
+
+.details_boxoffic1 {
+  color: red;
+}
+
+.details_ranking {
+  font-size: 30rpx;
+}
+
+/*视频和剧照  */
+
+.details_vd {
+  display: flex;
+  overflow: scroll;
+}
+
+.details_vd image {
+  width: 160rpx;
+  height: 200rpx;
+}
+
+.details_still {
+  margin-right: 15rpx;
+  margin-bottom: 20rpx;
+}
+
+.video_ding {
+  position: relative;
+}
+
+.video_ding .video_min {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 100rpx;
+  top: 140rpx;
+}
+
+/*观众评论  */
+
+.details_comments {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1rpx solid gainsboro
+}
+
+.details_writecomments {
+  width: 150rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 15rpx;
+  border: 1rpx solid red;
+  color: red;
+}
+
+.details_head {
+  display: flex;
+  font-size: 24rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid gray;
+}
+
+.details_head1 {
+  display: flex;
+  font-size: 24rpx;
+  margin-bottom: 100rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid gray;
+}
+.details_head>image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.details_head1>image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.details_five image {
+  width: 150rpx;
+  height: 50rpx;
+}
+
+.details_ch {
+  margin-left: 15rpx;
+}
+
+.details_gou {
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+}
+
+.details_gou>button {
+  background: red;
+  color: white;
+}
