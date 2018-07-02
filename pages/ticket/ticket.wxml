@@ -7,6 +7,8 @@
     </view>
   </view>
 
+
+
   <view>
     <view wx:if='{{allcinema.length==0}}'>
       本日暂无上映
